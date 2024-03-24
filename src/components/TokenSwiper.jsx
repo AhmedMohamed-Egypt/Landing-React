@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { register } from "swiper/element/bundle";
 import CardToken from "./CardToken";
-
+import { Navigation, Pagination } from 'swiper/modules';
 
 register();
 
@@ -12,10 +12,13 @@ function TokenSwiper() {
     const swiperEl = document.querySelector(".theToken__list swiper-container");
 
     const swiperParams = {
+      modules: [Navigation, Pagination],
+      /*
         pagination: {
             el: '.theToken__list .swiper-pagination',
             clickable: true,
           },
+          */
       breakpoints:{
         375: {
           slidesPerView: 1,
@@ -24,6 +27,7 @@ function TokenSwiper() {
           slidesPerView: 3,
         },
       },
+      
       injectStyles: [`
       .swiper-pagination {
 

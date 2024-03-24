@@ -34,24 +34,24 @@ function Header() {
           
           <ul className="d-flex align-items-center justify-content-center">
             <li className="mrLeft-auto ">
-              <a className="nuntio-med white anchorLink active " href="#">
+              <a className="nuntio-med white anchorLink active " href="#" onClick={()=>{setOpen(false)}}>
                 MR.Gain
               </a>
             </li>
             <li className=" " >
-              <a className="nuntio-med white anchorLink" rel="norefer" href="#how-it-work" >
+              <a className="nuntio-med white anchorLink" rel="norefer" href="#how-it-work" onClick={()=>{setOpen(false)}}>
                 <span  >Airdrop</span>
                 
               </a>
             </li>
             <li className=" ">
-              <a className="nuntio-med white anchorLink" rel="norefer" href="#Token">
+              <a className="nuntio-med white anchorLink" rel="norefer" href="#Token" onClick={()=>{setOpen(false)}}>
                 <span >Token</span>
                 
               </a>
             </li>
             <li className=" ">
-              <a className="nuntio-med white anchorLink" rel="norefer" href="#social">
+              <a className="nuntio-med white anchorLink" rel="norefer" href="#social" onClick={()=>{setOpen(false)}}>
                 <span >Social</span>
               </a>
             </li>

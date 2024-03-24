@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Card from "./Card";
 import { register } from "swiper/element/bundle";
-
+import { Navigation, Pagination } from 'swiper/modules';
 
 register();
 
@@ -42,6 +42,7 @@ function HowItWork() {
     const swiperEl = document.querySelector(".how-it-work swiper-container");
 
     const swiperParams = {
+      modules: [Navigation],
       spaceBetween: 30,
       breakpoints: {
         // when window width is >= 320px
@@ -76,25 +77,26 @@ function HowItWork() {
     }
     .swiper-button-next {
       right: 0;
-      &::after {
-        content:'\\e900';
+    }
+    .swiper-button-next::after{
+      content:'\\e900';
   
-        font-family: "icomoon" !important;
+      font-family: "icomoon" !important;
 font-weight: bold;
 font-size: 24px;
 color: #b480ee;
-      }
     }
-    .swiper-button-prev {
+    .swiper-button-prev{
       left: 0;
-      &::after {
-        content: "\\e901";
-        font-family: "icomoon" !important;
-        font-weight: bold;
-        font-size: 24px;
-        color: #b480ee;
-      }
     }
+    .swiper-button-prev::after{
+      content: "\\e901";
+      font-family: "icomoon" !important;
+      font-weight: bold;
+      font-size: 24px;
+      color: #b480ee;
+    }
+   
    
     `,
       ],

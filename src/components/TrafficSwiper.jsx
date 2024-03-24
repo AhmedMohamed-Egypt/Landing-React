@@ -66,27 +66,29 @@ function TrafficSwiper() {
       .swiper-button-prev svg{
         display:none
       }
-      .swiper-button-next {
+      .swiper-button-next{
         right: 50px;
-        &::after {
-          content:'\\e900';
-    
-          font-family: "icomoon" !important;
-  font-weight: bold;
-  font-size: 24px;
-  color: #b480ee;
-        }
       }
-      .swiper-button-prev {
+      .swiper-button-next::after {
+        content:'\\e900';
+        font-family: "icomoon" !important;
+        font-weight: bold;
+        font-size: 24px;
+        color: #b480ee;
+      }
+      .swiper-button-prev{
         left: 50px;
-        &::after {
-          content: "\\e901";
-          font-family: "icomoon" !important;
-          font-weight: bold;
-          font-size: 24px;
-          color: #b480ee;
-        }
       }
+      .swiper-button-prev::after{
+        content: "\\e901";
+        font-family: "icomoon" !important;
+        font-weight: bold;
+        font-size: 24px;
+        color: #b480ee;
+      }
+
+    
+     
       `,
       ],
     };

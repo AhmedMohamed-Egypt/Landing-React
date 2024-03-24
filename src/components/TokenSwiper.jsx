@@ -13,6 +13,7 @@ function TokenSwiper() {
     const swiperEl = document.querySelector(".theToken__list swiper-container");
 
     const swiperParams = {
+      speed:500,
       modules: [Navigation, Pagination],
       pagination: {
         clickable: true,

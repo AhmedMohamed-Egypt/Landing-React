@@ -42,7 +42,7 @@ function HowItWork() {
     const swiperEl = document.querySelector(".how-it-work swiper-container");
 
     const swiperParams = {
-     
+      speed:500,
       spaceBetween: 30,
       breakpoints: {
         // when window width is >= 320px

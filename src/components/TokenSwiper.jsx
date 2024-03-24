@@ -8,17 +8,17 @@ register();
 const data = ['Reward your followers and fans with exclusive content, cash prizes, NFTs, and more.','Monetize your traffic and generate revenue from your audience.','Monetize your traffic and generate revenue from your audience.']
 
 function TokenSwiper() {
+ 
   useEffect(() => {
     const swiperEl = document.querySelector(".theToken__list swiper-container");
 
     const swiperParams = {
       modules: [Navigation, Pagination],
-      /*
-        pagination: {
-            el: '.theToken__list .swiper-pagination',
-            clickable: true,
-          },
-          */
+      pagination: {
+        clickable: true,
+       
+      },
+         
       breakpoints:{
         375: {
           slidesPerView: 1,

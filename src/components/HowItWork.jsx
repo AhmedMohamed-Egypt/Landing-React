@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Card from "./Card";
 import { register } from "swiper/element/bundle";
-import { Navigation, Pagination } from 'swiper/modules';
+
 
 register();
 
@@ -42,7 +42,7 @@ function HowItWork() {
     const swiperEl = document.querySelector(".how-it-work swiper-container");
 
     const swiperParams = {
-      modules: [Navigation],
+     
       spaceBetween: 30,
       breakpoints: {
         // when window width is >= 320px

@@ -22,7 +22,7 @@ function Header() {
           className="header-adrop__logo white d-flex align-items-center"
           href="#"
         >
-          <img src="images/logo.png" />
+          <img src="/images/logo.png" />
           <p className="d-flex flex-column shrinkLineHeight">
             <span className="cairoBold size-36">MR.Gain</span>
             <span className=" size-12 lhf-font text-center">

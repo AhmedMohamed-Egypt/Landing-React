@@ -29,20 +29,18 @@ function TokenSwiper() {
       },
       
       injectStyles: [`
-      .swiper-pagination {
-
-        .swiper-pagination-bullet{
-          width: 13px;
-          height: 13px;
-          &:not(.swiper-pagination-bullet-active){
-            background-color: transparent;
-            border: 1px solid #AB8BD1;
-          }
-          &.swiper-pagination-bullet-active{
-            background-color: #57258F;
-          }
-        }
+      .swiper-pagination  .swiper-pagination-bullet{
+        width: 13px;
+        height: 13px;
       }
+      .swiper-pagination  .swiper-pagination-bullet:not(.swiper-pagination-bullet-active){
+        background-color: transparent;
+        border: 1px solid #AB8BD1;
+      }
+      .swiper-pagination  .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background-color: #57258F;
+      }
+    
       
       @media only screen and (min-width: 770px) {
         .swiper-wrapper{
